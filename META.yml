@@ -1,0 +1,20 @@
+---
+name: Catalyst-Plugin-Authentication-Credential-HTTP-Proxy
+version: 0.01
+author: ~
+abstract: |-
+  HTTP Basic authentication
+  for Catlayst.
+license: perl
+requires:
+  Catalyst: 5.5
+  Catalyst::Plugin::Authentication: 0
+  LWP::Simple: 0
+  Test::MockObject: 1.01
+provides:
+  Catalyst::Plugin::Authentication::Credential::HTTP::Proxy:
+    file: lib/Catalyst/Plugin/Authentication/Credential/HTTP/Proxy.pm
+    version: 0.01
+  Catalyst::Plugin::Authentication::Credential::HTTP::User:
+    file: lib/Catalyst/Plugin/Authentication/Credential/HTTP/User.pm
+generated_by: Module::Build version 0.2611
