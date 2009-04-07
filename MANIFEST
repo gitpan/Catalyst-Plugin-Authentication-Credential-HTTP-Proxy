@@ -3,7 +3,6 @@ Changes
 lib/Catalyst/Plugin/Authentication/Credential/HTTP/Proxy.pm
 lib/Catalyst/Plugin/Authentication/Credential/HTTP/User.pm
 MANIFEST			This list of files
-t/basic.t
 t/pod.t
 t/pod_coverage.t
 META.yml

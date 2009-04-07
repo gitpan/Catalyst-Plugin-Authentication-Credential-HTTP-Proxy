@@ -10,7 +10,7 @@ use Catalyst       ();
 use Catalyst::Plugin::Authentication::Credential::HTTP::User;
 use Carp qw/croak/;
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 
 sub authenticate_http_proxy {
@@ -92,7 +92,7 @@ __END__
 
 =head1 NAME
 
-Catalyst::Plugin::Authentication::Credential::HTTP - HTTP Basic authentication
+Catalyst::Plugin::Authentication::Credential::HTTP - DEPRECATED HTTP Basic authentication
 for Catlayst.
 
 =head1 SYNOPSIS
@@ -128,6 +128,10 @@ for Catlayst.
         $c->authorization_required_response( realm => "foo" );
         $c->error(0);
     }
+
+=head1 DEPRECATED
+
+This module is deprecated by L<Catalyst::Authentication::HTTP::proxy>, please do not use this code in new applications.
 
 =head1 DESCRIPTION
 
@@ -178,7 +182,7 @@ header to demand authentication data from the user agent.
 
 =head1 AUTHORS
 
-Marcus Ramberg <mramberg@cpan.org
+Marcus Ramberg C<mramberg@cpan.org>
 
 =head1 COPYRIGHT & LICENSE
 
